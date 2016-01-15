@@ -38,10 +38,16 @@
 					<a href="#ors">OpenRouteService</a>
 				</li>
 				<li>
+					<a href="#services">OpenLS Services</a>
+				</li>
+				<li>
 					<a href="#help">ORS Help</a>
 				</li>
 				<li>
 					<a href="#data">Data</a>
+				</li>
+				<li>
+					<a href="#libraries">Libraries</a>
 				</li>
 				<li>
 					<a href="#donation">Donate for ORS</a>
@@ -91,6 +97,9 @@
 				<p>
 					If you intend to use OpenRouteService in your own applications please contact us. We are interested in spreading the usage of OpenRouteService in academic and non-profit projects.
 				</p>
+				<p>
+					Please note that this project is developed by a small group of individuals. We don't have the man power to guarantee that this client works in all browsers and all operating systems. We currently test our features in Firefox, Safari and Chrome.
+				</p>
 				<div class="space">
 					&nbsp;
 				</div>
@@ -127,21 +136,18 @@
 						Pascal Neis &amp; Alexander Zipf
 					</dd>
 					<dt>
-						Software Development
+						Backend Development
 					</dt>
 					<dd>
-						Pascal Neis, Maxim Rylov, Enrico Steiger &amp; Timothy Ellersiek
+						Maxim Rylov, Enrico Steiger &amp; Timothy Ellersiek
 					</dd>
 					<dt>
 						Website
 					</dt>
 					<dd>
-						Timothy Ellersiek, Carina Eichler &amp; Oliver Roick
+						Timothy Ellersiek, Enrico Steiger, Maxim Rylov &amp; Oliver Roick
 					</dd>
-					<!-- <dt>TMC Data</dt>
-					<dd>Christian Mayer</dd>
-					<dt>RouteHeightProfile</dt>
-					<dd>Wolfgang J. Eder</dd> -->
+					
 					<dt>
 						Web Mapping Service (WMS) &amp; TileCache
 					</dt>
@@ -220,86 +226,225 @@
 					Currently openrouteservice.org offers a end-user oriented website with an interactive map , but soon we will also make the route service available as OGC-web service, that can be used through http-based xml-requestes as specified in the OGC OpenLS Route Service specification. This will allow developers to use this servide in an open and interoperable way easily within their own applications.
 				</p>
 				<p>
+				
+				<section id="services">
+				<div class="space">
+					&nbsp;
+				</div>
+				<div class="space">
+					&nbsp;
+				</div>
 				<table style="width:90%" style="dotted" border="0">
-				  <tr>
-					<td width="40%"><h3>OpenLS Services</h3>(Status 26.02.2015)</td>
-					</tr>
-				  <tr>
-					<td>Description: Through the OpenLS interface requests can be generated  to the appropriate services without further query limitations. The offered API's are only valid for <b> one </b> year.<br>
-					<br>In case you plan a long-term use of the interfaces within your projects , please contact us via Email</td>
-				   </tr>
-					<tr>
-					 <td><h4>Routing Services [RS]*</h4></td>
-					 </tr>
-					 <tr>
-					<td>Restful Webservice route request:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing</a></td>
-					</tr>
-					<tr>
-					<td>testclient with meta information and schema file for routing service:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing&help</td>
-					</tr>
-					<tr>
-					<td> direct route request via URL + parameter:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/route" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/route</td>
-					</tr>
+					  <tr>
+						<td width="50%"><h3>OpenLS Services</h3>(Status 01.09.2015)</td>
+						</tr>
+					  <tr>
+						<td>Description: Through the OpenLS interface requests can be generated  to the appropriate services without further query limitations. The offered API's are valid for <b> one </b> year.<br>
+						<br>In case you plan a long-term use of the interfaces within your projects , please contact us via Email</td>
+					   </tr>
 						<tr>
-					<td>  graph routing profile update information:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing?info" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing?info</td>
-					</tr>
+						 <td><h4>Routing Services [RS]*</h4></td>
+						 </tr>
+						 <tr>
+						<td>Restful Webservice route request:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing</a></td>
+						</tr>
 						<tr>
-					<td><font size="-1">*currently the maximum request limitation is 1000/hour and user.  We kindly ask you to not use the service excessively. In case the server performance will be affected we reserve us the right to block individual service user.</font></td>
-					</tr>
-					<tr>
-					<td><h4>Geocoding Service [LUS]</h4></td>
-					</tr>
-					<tr>
-					<td>Restful Webservice geocode request:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocoding" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocoding</td>
-					</tr>
-					<tr>
-					<td>testclient with meta information and schema file for geocoding service:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocoding&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocoding&help<td>
-					</tr>
-					<tr>
-					<td>direct geocoding route request via URL + parameter:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocode" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocode</td>
-					</tr>
-					<tr>
-					<td><h4>Directory (POI Search) Service [DS]</h4></td>
-					</tr>
-					<tr>
-					<td>Restful Webservice directory request:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/directory" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/directory</td>
-					</tr>
-					<tr>
-					<td>testclient with meta information and schema file for directory service:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/directory&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/directory&help</td>
-					</tr>
-					<tr>
-					<td>direct directory request via URL + parameter:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/direct" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/direct
-					</tr>
-					<tr>
-					<td><h4>OpenLS Acessbility Analysis service [AAS]*</h4></td>
-					</tr>
-					<tr>
-					<td>Restful Webservice accessbility analysis request:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analysis" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analysis</td>
-					</tr>
-					<tr>
-					<td>testclient with meta information and schema file for analysis service:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analysis&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analysis&help<td>
-					</tr>
-					<tr>
-					<td>direct accesbility analysis request via URL + parameter:</td>
-					<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analyse" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analyse</td>
-					</tr>
-					<tr>
-					<td><font size="-1">*for performance reasons only 30 minutes are currently supported</font></td>
-					</tr>
-				</table>
-				</p>
+						<td>testclient with meta information and schema file for routing service:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing&help</td>
+						</tr>
+						<tr>
+						<td> direct route request via URL + parameter:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/route" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/route</td>
+						</tr>
+							<tr>
+						<td>  graph routing profile update information:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/routing?info" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/routing?info</td>
+						</tr>
+							<tr>
+						<td><font size="-1">*currently the maximum request limitation is 1000/hour and user.  We kindly ask you to not use the service excessively. In case the server performance will be affected we reserve us the right to block individual service user.</font></td>
+						</tr>
+						<tr>
+						<td><h4>Geocoding Service [LUS]</h4></td>
+						</tr>
+						<tr>
+						<td>Restful Webservice geocode request:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocoding" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocoding</td>
+						</tr>
+						<tr>
+						<td>testclient with meta information and schema file for geocoding service:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocoding&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocoding&help<td>
+						</tr>
+						<tr>
+						<td>testclient with meta information and schema file for reverse geocoding service:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/reversegeocoding&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/reversegeocoding&help<td>
+						</tr>
+						<tr>
+						<td>direct geocoding route request via URL + parameter:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/geocode" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/geocode</td>
+						</tr>
+						<tr>
+						<td><h4>Directory (POI Search) Service [DS]</h4></td>
+						</tr>
+						<tr>
+						<td>Restful Webservice directory request:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/directory" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/directory</td>
+						</tr>
+						<tr>
+						<td>testclient with meta information and schema file for directory service:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/directory&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/directory&help</td>
+						</tr>
+						<tr>
+						<td>direct directory request via URL + parameter:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/direct" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/direct
+						</tr>
+						<tr>
+						<td><h4>OpenLS Acessbility Analysis service [AAS]*</h4></td>
+						</tr>
+						<tr>
+						<td>Restful Webservice accessbility analysis request:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analysis" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analysis</td>
+						</tr>
+						<tr>
+						<td>testclient with meta information and schema file for analysis service:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analysis&help" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analysis&help<td>
+						</tr>
+						<tr>
+						<td>direct accesbility analysis request via URL + parameter:</td>
+						<td><a href="http://openls.geog.uni-heidelberg.de/testing2015/analyse" target="_blank">http://openls.geog.uni-heidelberg.de/testing2015/analyse</td>
+						</tr>
+						<tr>
+						<td><font size="-1">*for performance reasons only 30 minutes are currently supported</font></td>
+						</tr>
+					</table>
+					</p><p>
+					<table style="width:90%" style="dotted" border="0">
+						<tr>
+						<td><h4>Direct Routing Request (via GET)</h4></td>
+						</tr>
+						<tr>
+						<td style="width:50%"><b>Parameters</b></td>
+						<td>*start = longitude and latitude of the start position, e.g. '7.0892567,50.7265543'
+						<br>*via (optional) = longitudes and latitudes of the via positions separated by blank, e.g. '7.0920891,50.7295968 7.1044487,50.7247613'
+						<br>*end = longitude and latitude of the end position, e.g. '7.0986258,50.7323634'
+						<br>*routepref = the preference of the routing: 'Car', 'Pedestrian', 'Bicycle', 'HeavyVehicle
+						<br>*weighting = the preference of the routing method: 'Fastest', 'Shortest', 'Recommended'
+						<br>*distunit = distance unit of route calculation (default in kilometer 'KM', meters 'M', miles 'MI')
+						<br>*noMotorways = Avoid Motorways? e.g. 'noMotorways=false' OR 'noMotorways=true'
+						<br>*noTollways = Avoid Tollways? e.g. 'noTollways=false' OR 'noTollways=true'
+						<br>*noFerries = Avoid Ferrys?  e.g. 'noFerries=false' OR 'noFerries=true'
+						<br>*noUnpavedroads (only for Bicycle profile) = Avoid unpaved Roads? e.g. 'noUnpavedroads=false' OR 'noUnpavedroads=true'
+						<br>*noSteps (only for Bicycle profile) = Avoid Steps? e.g. 'noSteps=false' OR 'noSteps=true'
+						<br>*instructions = Route instructions 'instructions=true' or 'instructions=false'
+						<br>*lang = language of routeinstructions: 'de' (Deutsch), 'en' (English), etc., all supported languagse see <a href="https://github.com/GIScience/openrouteservice/blob/master/js/lang/RouteService.languages.xml" target="_blank">here</a></td>
+						</tr>
+						<tr><td></td></tr>
+						<td ><b>optional Parameters</b><br>(only HeavyVehicle route profile)</td>
+						<td>
+						*hazardous = hazardous material? e.g. 'hazardous=false' OR 'hazardous=true', further info see <a href="[http://wiki.openstreetmap.org/wiki/EN:Key:hazmat" target="_blank">here</a>
+						<br>*value_weight = maximum weight restriction in tons
+						<br>*value_height = maximum height restriction in meter
+						<br>*value_length = maximum length restriction in meter
+						<br>*value_axleload = maximum axleload restriction in tons
+						</td>
+						</tr>
+						<tr><td></td></tr>
+						<tr>
+						<td><b>Example URL</b></td>
+						<td>
+						<a href="http://openls.geog.uni-heidelberg.de/route?start=9.256506,49.240011&end=8.72083,49.7606&via=&lang=de&distunit=KM&routepref=Bicycle&weighting=Shortest&avoidAreas=&useTMC=false&noMotorways=false&noTollways=false&noUnpavedroads=false&noSteps=false&noFerries=false&instructions=false" target="_blank">Bicycle & Shortest path</a><br>
+						<a href="http://openls.geog.uni-heidelberg.de/route?start=9.256506,49.240011&end=8.72083,49.7606&via=&lang=de&distunit=KM&routepref=Car&weighting=Fastest&avoidAreas=&useTMC=false&noMotorways=false&noTollways=false&noUnpavedroads=false&noSteps=false&noFerries=false&instructions=false" target="_blank">Car & Fastest path</a><br>
+						<a href="http://openls.geog.uni-heidelberg.de/route?start=9.256506,49.240011&end=8.72083,49.7606&via=&lang=de&distunit=KM&routepref=HeavyVehicle&weighting=Fastest&noMotorways=false&noTollways=false&noUnpavedroads=false&noSteps=false&noFerries=false&instructions=false&value_length=15&value_height=4&value_weight=7&value_width=4&value_axleload=2&hazardous=true" target="_blank">Heavy Vehicle & Fastest path</a><br> 
+						</td>
+						</tr>
+					</table></p>
+					<table style="width:90%" style="dotted" border="0">
+						<tr>
+						<td><h4>Direct Geocoding Request (via GET)</h4></td>
+						</tr>
+						<tr>
+						<td style="width:50%"><b>Parameters</b></td>
+						<td>*FreeFormAdress = free text search of adress
+						<br>*MaxResponse = maximum amount of search results
+						<br>*lon = longitude 
+						<br>*lat = latitude
+						</td>
+						</tr>
+						<tr><td></td></tr>
+						<tr>
+						<td><b>Example URL</b></td>
+						<td>
+						<a href="http://openls.geog.uni-heidelberg.de/geocode?FreeFormAdress=Bonn,%20Meckenheimer%20Allee&MaxResponse=20" target="_blank">Free form Adress Geocoding Search</a><br>
+						<a href="http://openls.geog.uni-heidelberg.de/geocode?FreeFormAdress=Bonn,%20Meckenheimer%20Allee&MaxResponse=20" target="_blank">Reverse Geocoding Search</a><br>
+						</td>
+						</tr>
+					</table></p>
+					<table style="width:90%" style="dotted" border="0">
+						<tr>
+						<td><h4>Direct Accesibility Analysis Request (via GET)</h4></td>
+						</tr>
+						<tr>
+						<td style="width:50%"><b>Parameters</b></td>
+						<td>*position (lon/lat) = longitude and latitude of the position marker, e.g. '-0.12772,51.50715'
+						<br>*routePreference = preferred route profile: 'Car', 'Bicycle', 'Pedestrian', 'HeavyVehicle'
+						<br>*method = method of isochrones generation: 'RecursiveGrid', 'TIN' 
+						<br>*interval= intervall of isochrones generation (in minutes): '180'
+						</td>
+						</tr>
+						<tr><td></td></tr>
+						<tr>
+						<td><b>Example URL</b></td>
+						<td>
+						<a href="http://openls.geog.uni-heidelberg.de/analyse?position=8.661367306640742,49.42859632294706&minutes=1&routePreference=Car&method=RecursiveGrid&interval=180" target="_blank">Accessbility Car</a><br>
+						<a href="http://openls.geog.uni-heidelberg.de/analyse?position=8.661367306640742,49.42859632294706&minutes=1&routePreference=Bicycle&method=TIN&interval=180" target="_blank">Accessbility Bicycle</a><br>
+						</td>
+						</tr>
+					</table></p>
+					<table style="width:90%" style="dotted" border="0">
+						<tr>
+						<td><h4>PositionLink</h4><br>In order to show the map in a certain position and zoom level use these permalink parameters. </td>
+						</tr>
+						<tr>
+						<td style="width:50%"><b>Parameters</b></td>
+						<td>*pos (lon/lat) = longitude (centre of the map),latitude (centre of the map)
+						<br>*zoom = zoom level
+						<br>*layer(optional) = default background layer (OpenMapsurfer=B000FTTTTTTTTTT)
+						</td>
+						</tr>
+						<tr><td></td></tr>
+						<tr>
+						<td><b>Example URL</b></td>
+						<td>
+						<a href="http://www.openrouteservice.org/?pos=9.004861721924154,52.27606884292058&zoom=13&layer=B000FTTTTTTTTTT" target="_blank">PositionLink Example</a><br>
+						</td>
+						</tr>
+					</table></p>
+					<table style="width:90%" style="dotted" border="0">
+						<tr>
+						<td><h4>RouteLink</h4><br>In order to show the map with a calculated route result use the same parameters then for routing.</td>
+						</tr>
+						<tr>
+						<td style="width:50%"><b>Parameters</b></td>
+						<td>*pos (lon/lat) = longitude and latitude of the position marker, e.g. '-0.12772,51.50715'
+						<br>*zoom = zoom level
+						<br>*layer(optional) = default background layer (OpenMapsurfer=B000FTTTTTTTTTT)
+						<br>*routeWeigh = weighting method of routing: 'Fastest', 'Shortest','Recommended'
+						<br>*routeOpt = preferred route profile: 'Car', 'Bicycle','Pedestrian','HeavyVehicle'
+						<br>*routeLang = language of route instructions: 'de' (Deutsch), 'en' (English) etc., all supported languages see <a href="https://github.com/GIScience/openrouteservice/blob/master/js/lang/RouteService.languages.xml" target="_blank">here</a>
+						<br>*lang = language of ORS menu: 'de' (Deutsch), 'en' (English) etc., all supported menu languages see <a href="https://github.com/GIScience/openrouteservice/tree/master/js/lang" target="_blank">here</a>
+						<br>*distUnit = distance unit of route calculations, default meters (m)
+						</td>
+						</tr>
+						<tr><td></td></tr>
+						<tr>
+						<td><b>Example URL</b></td>
+						<td>
+						<a href="http://www.openrouteservice.org/?pos=8.925670599999979,52.28150333376007&zoom=14&layer=0B00FTTTTTTTTTT&routeOpt=Car&wp=8.959028134277718,52.29129590915816,8.892766842773657,52.272392560153&lang=en&routeLang=en&distUnit=m&routeWeight=Fastest" target="_blank">RouteLink Example</a><br>
+						<a href="http://www.openrouteservice.org/?pos=8.925670599999979,52.28150333376007&zoom=14&layer=0B00FTTTTTTTTTT&routeOpt=Car&wp=8.959028134277718,52.29129590915816,8.89039418703606,52.28759404123498,8.910135245385733,52.29588865807109,8.892766842773657,52.2723925601532&lang=en&routeLang=en&distUnit=m&routeWeight=Fastest">RouteLink Example with Via Points</a><br>
+						</td>
+						</tr>
+					</table></p>
+					
 				<div class="space_small">
 					&nbsp;
 				</div>
@@ -317,6 +462,8 @@
 				</p>
 				
 				<ul class="unstyled references">
+					<li>Steiger, E. Zipf, A.(2015): <a href="http://k1z.blog.uni-heidelberg.de/files/2015/06/agile_2015_osm_tmc_lcl_submission.pdf" target="_blank" >Enriching OSM road networks with TMC LCL information.</a>   RICH-VGI: enRICHment of volunteered geographic information (VGI): Techniques, practices and current state of knowledge. 18th AGILE Conference on Geographic Information Science. Lisbon, Portugal. </li>
+					<li>Steiger, E. Zipf, A.(2015): <a href="http://k1z.blog.uni-heidelberg.de/files/2015/06/osm_tmc_erstellung-eines-osm-strasengraphen-mit-tmc-lcl-informationen_agit.pdf" target="_blank" >Erstellung eines OSM Stra&szlig;engraphen mit TMC LCL Informationen.</a> In: Strobl, J., Blaschke, T., Griesebner, G. (Hrsg.): Angewandte Geoinformatik 2015. Berlin</li> 
 					<li>Neis, P. (2008): Location Based Servies mit OpenStreetMap Daten. Masterthesis</li>
 					<li>Schmitz,S.,   Zipf A. and Neis, P. (2008):  New Applications based on Collaborative Geodata - the Case of Routing. XXVIII INCA International Congress on Collaborative Mapping and SpaceTechnology, Gandhinagar, Gujarat, India.</li>
 					<li>Neis P. und A. Zipf (2008): LBS_2.0  - Realisierung von Location Based Services mit
@@ -399,13 +546,58 @@
 					<li>
 						TMC traffic Messages: <a href="http://www.bast.de/" target="_blank">BASt</a>
 					</li>
-					
 					<li>
 						ORS WebFrontend: <a href="https://github.com/GIScience/openrouteservice" target="_blank">https://github.com/GIScience/openrouteservice</a> -->
 						Please report & fix any issues <a href="https://github.com/GIScience/openrouteservice/issues" target="_blank">here</a>
 						
 					</li>
-		
+				</ul>
+				<div class="topOfPage">
+					<a href="#top">Top of page &nbsp;<i class="icon-chevron-up">&nbsp;</i></a>
+				</div>
+			</section>
+			<section id="libraries">
+				<div class="space">
+					&nbsp;
+				</div>
+				<div class="space">
+					&nbsp;
+				</div>
+				<h2><a name="data">JavaScript libraries</a></h2>
+				<ul>
+					<li>
+						<a href="https://github.com/Leaflet/Leaflet" target="_blank">Leaflet</a>
+					</li>
+					<li>
+						<a href="https://github.com/Leaflet/Leaflet.Editable" target="_blank">Leaflet Editable by Yohan Boniface</a>
+					</li>
+					<li>
+						<a href="https://github.com/MrMufflon/Leaflet.Elevation" target="_blank">Leaflet Elevation by Felix Bache</a>
+					</li>
+					<li>
+						<a href="https://github.com/jseppi/Leaflet.MakiMarkers" target="_blank">Leaflet MakiMarkers by James Seppi</a>
+					</li>
+					<li>
+						<a href="https://github.com/ardhi/Leaflet.MousePosition" target="_blank">Leaflet MousePosition by Ardhi Lukianto</a>
+					</li>
+					<li>
+						<a href="https://github.com/tyrasd/togpx" target="_blank">ToGPX by Martin Raifer</a>
+					</li>
+					<li>
+						<a href="https://github.com/mapbox/togeojson/" target="_blank">ToGeoJSON by Mapbox</a>
+					</li>
+					<li>
+						<a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap by Twitter</a>
+					</li>
+					<li>
+						<a href="https://github.com/mbostock/d3" target="_blank">d3.js by Mike Bostock</a>
+					</li>
+					<li>
+						<a href="https://github.com/sstephenson/prototype" target="_blank">prototype.js by Sam Stephenson</a>
+					</li>
+					<li>
+						<a href="https://github.com/jquery/jquery" target="_blank">jQuery by the jQuery Foundation</a>
+					</li>
 				</ul>
 				<div class="topOfPage">
 					<a href="#top">Top of page &nbsp;<i class="icon-chevron-up">&nbsp;</i></a>
@@ -420,9 +612,6 @@
 				</div>
 				<h2><a name="thanks">Thanks to...</a></h2>
 				<ul>
-					<li>
-						<a href="http://www.openlayers.org" target="_blank">http://www.openlayers.org</a>
-					</li>
 					<li>
 						<a href="http://www.openstreetmap.org" target="_blank">http://www.openstreetmap.org</a>
 					</li>
@@ -468,8 +657,7 @@
 				</div>
 				<h2><a name="wiki">OpenStreetmap (OSM)</a></h2>
 				<p>
-					<a href="http://www.openstreetmap.org" target="_blank">http://www.openstreetmap.org</a>
-							
+					<a href="http://www.openstreetmap.org" target="_blank">http://www.openstreetmap.org</a>			
 				</p>
 				<p>
 					"OpenStreetMap is an editable map of the whole world, which is being built largely from scratch using GPS traces, and released with an open content license. The OpenStreetMap License allows free (or almost free) access to our map images and all of our underlying map data, and the project aims to promote new and interesting uses of this data ..." Read more on: <a href="http://wiki.openstreetmap.org" target="_blank">http://wiki.openstreetmap.org</a>.

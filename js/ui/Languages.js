@@ -27,11 +27,13 @@ var Languages = (function(w) {'use strict';
 		$('#carLabel').html(p.translate('Car'));
 		$('#fastestLabel').html(p.translate('Fastest'));
 		$('#shortestLabel').html(p.translate('Shortest'));
+		$('#recommendedLabel').html(p.translate('Recommended'));
 		$('#BicycleLabel').html(p.translate('Bicycle'));
 		$('#BicycleSafetyLabel').html(p.translate('BicycleSafety'));
 		$('#BicycleRouteLabel').html(p.translate('BicycleRoute'));
 		$('#BicycleMtbLabel').html(p.translate('BicycleMTB'));
 		$('#BicycleRacerLabel').html(p.translate('BicycleRacer'));
+		$('#BicycleTourLabel').html(p.translate('BicycleTour'));
 		$('#PedestrianLabel').html(p.translate('Pedestrian'));
 		
 		//truck profile
@@ -41,6 +43,7 @@ var Languages = (function(w) {'use strict';
 		$('#truckheightLabel').html(p.translate('TruckHeight'));
 		$('#truckweightLabel').html(p.translate('TruckWeight'));
 		$('#truckwidthLabel').html(p.translate('TruckWidth'));
+		$('#truckaxleloadLabel').html(p.translate('TruckAxleLoad'));
 		$('#goodsHeavyTruckLabel').html(p.translate('goodsHeavyTruck'));
 		$('#busHeavyTruckLabel').html(p.translate('busHeavyTruck'));
 		$('#busHeavyTruckLabel').html(p.translate('busHeavyTruck'));
@@ -55,7 +58,14 @@ var Languages = (function(w) {'use strict';
 		$('#avoidFerryLabelBike').html(p.translate('avoidFerryBike'));
 		$('#avoidunpavedRoadsLabelBike').html(p.translate('avoidunpavedRoadsBike'));
 		$('#avoidStepsLabelBike').html(p.translate('avoidStepsBike'));
+		//$('#avoidpavedRoadsLabelBike').html(p.translate('avoidpavedRoadsBike'));
+		$('#avoidStepsLabelPedestrian').html(p.translate('avoidStepsBike'));
+		$('#avoidFerryLabelPedestrian').html(p.translate('avoidFerryPedes'));
 		
+		$('#avoidFordsLabel').html(p.translate('avoidFords'));
+ 		$('#avoidFordsLabelBike').html(p.translate('avoidFordsBike'));
+ 		$('#avoidFordsLabelPedestrian').html(p.translate('avoidFordsPedestrian'));
+
 		$('#avoidRoadsBtn').html(p.translate('avoidRoadMain'));
 		$('#avoidAreasBtn').html(p.translate('avoidAreasMain'));
 		$('#avoidBikesBtn').html(p.translate('avoidBikeMain'));
@@ -68,7 +78,8 @@ var Languages = (function(w) {'use strict';
 		$('#avoidMotorLabel').html(p.translate('avoidMotorways'));
 		$('#avoidunpavedRoadsLabel').html(p.translate('avoidunpavedRoads'));
 		$('#avoidFerryLabel').html(p.translate('avoidFerry'));
-		
+		$('#avoidTunnelLabel').html(p.translate('avoidTunnel'));
+		$('#avoidFordsLabel').html(p.translate('avoidFord'));
 		
 		//wheelchair parameters
 		$('#surfaceLabel').html(p.translate('surface'));
@@ -159,6 +170,8 @@ var Languages = (function(w) {'use strict';
 		$('#contextStart').html(p.translate('useAsStartPoint'));
 		$('#contextVia').html(p.translate('useAsViaPoint'));
 		$('#contextEnd').html(p.translate('useAsEndPoint'));
+
+		$("#maxSpeedInput").attr("placeholder", p.translate('maxSpeed')).val("").focus().blur();
 	}
 
 	/**

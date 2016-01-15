@@ -1,9 +1,4 @@
 var lang_cz = {			
-    'left'	:'vlevo',
-    'right':'pr&aacute;vo',
-    'half-left':'napul vlevo',
-    'half-right':'napul pravdu',
-    'straight':'rovn&yacute;',
     'serverError':'Je n&aacute;m l&iacute;to.Doslo k chybe pri v&yacute;poctu na serveru. Zkuste to pros&iacute;m znovu pozdeji. ',
     'contact':'Info & kontakt',
     'closeBtn':'Zavr&iacute;t',
@@ -73,10 +68,12 @@ var lang_cz = {
 	'Car' : 'Auto',
     'Shortest':'nejkrats&iacute;trasa',
     'Fastest':'Nejrychlejs&iacute;cesta',
+    'Recommended': 'Doporu&#269;en&aacute; trasa',
     'Pedestrian':'chodec',
     'Bicycle':'nejkrats&iacute;trasa',
     'BicycleSafety':'Nejbezpecnejs&iacute;cesta',
     'BicycleRoute':'radeji kol j&iacute;zdn&iacute;ho pruhu',
+	'BicycleTour':  'tour cyklus',
     'BicycleMTB':'horsk&eacute;kolo',
     'BicycleRacer':'z&aacute;vodn&iacute;motocykl',
 	'Wheelchair' : 'pr&iacute;stupn&aacute;cesta',
@@ -87,17 +84,27 @@ var lang_cz = {
 	'avoidFerry':  'Vyhnete trajektov&eacute;ho spojen&iacute;',
 	
 	'avoidRoadMain' : '<i class="icon-road icon-white"></i>&nbsp;&nbsp;vyhnout typům silnic &nbsp;&nbsp;<span class="caret">',
-	'avoidBikeMain' : '<i class="icon-road icon-white"></i>&nbsp;&nbsp;vyhnout typům  &nbsp;&nbsp;<span class="caret">',
-	'avoidAreasMain' : '<i class="icon-pencil icon-white"></i>&nbsp;&nbsp;vyhnout oblastí&nbsp;&nbsp;<span class="caret">',
+	'avoidBikeMain' : '<i class="icon-road icon-white"></i>&nbsp;&nbsp;vyhnout typům silnic &nbsp;&nbsp;<span class="caret">',
+	'avoidAreasMain' : '<i class="icon-pencil icon-white"></i>&nbsp;&nbsp;vyhnout oblastí &nbsp;&nbsp;<span class="caret">',
+	'avoidPedesMain' : '<i class="icon-ban-circle icon-white"></i>&nbsp;&nbsp;vyhnout typům silnic  &nbsp;&nbsp;<span class="caret">',
 	
+	'avoidFerryPedes' : 'Vyhnete trajektov&eacute;ho spojen&iacute;' ,	
 	'avoidFerryBike' : 'Vyhnete trajektov&eacute;ho spojen&iacute;' ,
 	'avoidunpavedRoadsBike' : 'Vyhnete se nezpevnen&yacute;ch cest&aacute;ch',
 	'avoidStepsBike' : 'Vyhnete kroky',
-	
+
+    'avoidStepsPedestrian' : 'Vyhnete kroky',
+    'avoidFords' : 'brody',
+    'avoidFordsBike' : 'brody',
+    'avoidFordsPedestrian' : 'brody',
+
+
+
 	'TruckLength' : 'maxim&aacute;ln&iacute;d&eacute;lka',
 	'TruckHeight' : 'maxim&aacute;ln&iacute;v&yacute;ska',
 	'TruckWeight' : 'maxim&aacute;ln&iacute;v&aacute;ha',
 	'TruckWidth' : 'maxim&aacute;ln&iacute;s&iacute;rka',
+	'TruckAxleLoad' : 'zat&iacute;&#382;en&iacute; n&aacute;pravy',
 	'goodsHeavyTruck' : 'Vozidla do 3.5t',
 	'busHeavyTruck' : 'Autobus',
 	'hgvHeavyTruck' : 'T&#283;&#382;k&eacute;n&aacute;kladn&iacute;vozidlo',

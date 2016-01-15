@@ -23,16 +23,17 @@
 
 	///////////////////////////////////////////////////
 	//*** Request erstellen POST ***
-	if(isset($_GET["position"]) && isset($_GET["minutes"])&& isset($_GET["method"])&& isset($_GET["interval"]) && isset($_GET["routepreference"])){
+	if(isset($_GET["position"])&& isset($_GET["minutes"]) && isset($_GET["routePreference"])&& isset($_GET["method"])&& isset($_GET["interval"])){
 		$position = $_GET["position"];
 		$minutes = $_GET["minutes"];
 		$method = $_GET["method"];
 		$interval = $_GET["interval"];
-		$routepreference = $_GET["routepreference"];
+		$routepreference = $_GET["routePreference"];
 		
 		$position = str_replace(",", " ", $position);
 
-		$request = createRequest($position, $minutes, $method, $intervall, $routepreferences);
+		$request = createAnalysisRequest($position, $minutes, $routepreference, $method, $interval);
+
 
 		///////////////////////////////////////////////////
 		//*** Sende Request an Web Service ***

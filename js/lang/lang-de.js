@@ -1,13 +1,8 @@
 var lang_de = {
-	'left' : 'links',
-	'right' : 'rechts',
-	'half-left' : 'halb links',
-	'half-right' : 'halb rechts',
-	'straight' : 'geradeaus',
-
 	'serverError': 'Sorry, w&auml;hrend der Berechnung ist ein Fehler auf dem Server passiert. Bitte versuchen Sie es sp&auml;ter noch einmal ',
 	'contact': 'Info&nbsp;&amp;&nbsp;Kontakt',
 
+		'maxSpeed' : 'maximale Geschwindigkeit',
 		'closeBtn': 'Schlie&szlig;en',
 		'saveBtn': 'Speichern',
 
@@ -27,6 +22,7 @@ var lang_de = {
 		'resetRoute' :  'Gesamte Route l&ouml;schen ',
 		'TotalTime':  'Gesamte Reisezeit',
 		'TotalDistance':  'Gesamte Wegstrecke',
+		'ActualDistance' : 'Effektive Wegstrecke',
 		'routeSummary':  'Zusammenfassung',
 		'routeInstructions':  'Wegbeschreibung',
 		'routeLinkText' :  'Permalink zur aktuellen Route',
@@ -76,6 +72,7 @@ var lang_de = {
 		'Car' : 'Auto',
 		'Shortest':  'K&uuml;rzester Weg',
 		'Fastest':  'Schnellster Weg',
+		'Recommended': 'Bevorzugter Weg',
 		'Pedestrian':  'Fußg&auml;nger',
 		'Wheelchair':  'Barrierefrei',
 		'Bicycle':  'Normal',
@@ -83,10 +80,12 @@ var lang_de = {
 		'BicycleRoute':  'Bevorzuge Fahrradweg',
 		'BicycleMTB':  'Mountainbike',
 		'BicycleRacer':  'Rennrad',
+		'BicycleTour':  'Radtour',
 		'TruckLength' : 'L&auml;nge',
 		'TruckHeight' : 'H&ouml;he',
 		'TruckWeight' : 'Gewicht',
 		'TruckWidth' : 'Breite',
+		'TruckAxleLoad' : 'Achslast',
 		'goodsHeavyTruck' : 'Fahrzeuge bis 3.5t',
 		'busHeavyTruck' : 'Bus',
 		'hgvHeavyTruck' : 'Schwerlasttransport',
@@ -99,18 +98,26 @@ var lang_de = {
 		'avoidRoadMain' : '<i class="icon-road icon-white"></i>&nbsp;&nbsp;Stra&szlig;en vermeiden &nbsp;&nbsp;<span class="caret">',
 		'avoidBikeMain' : '<i class="icon-road icon-white"></i>&nbsp;&nbsp;Stra&szlig;en vermeiden &nbsp;&nbsp;<span class="caret">',
 		'avoidAreasMain' : '<i class="icon-pencil icon-white"></i>&nbsp;&nbsp;Gebiete vermeiden &nbsp;&nbsp;<span class="caret">',
-		'avoidPedesMain' : '<i class="icon-ban-circle icon-white"></i>&nbsp;&nbsp;avoid road types &nbsp;&nbsp;<span class="caret">',
+		'avoidPedesMain' : '<i class="icon-ban-circle icon-white"></i>&nbsp;&nbsp;Stra&szlig;en vermeiden  &nbsp;&nbsp;<span class="caret">',
 
 		'avoidMotorways':  'Autobahnen vermeiden',
 		'avoidTollways':  'Mautstra&szlig;en vermeiden',
 		'avoidunpavedRoads':  'Unbefestigte Straßen vermeiden',
 		'avoidFerry':  'F&aumlhrverbindungen vermeiden',
-		
+		'avoidTunnel' : 'Tunnel vermeiden',
+		'avoidFord': 'Furten vermeiden',
+		'avoidFerryPedes' : 'F&aumlhrverbindungen vermeiden' ,
 		'avoidFerryBike' : 'F&aumlhrverbindungen vermeiden' ,
 		'avoidunpavedRoadsBike' : 'Unbefestigte Straßen vermeiden',
 		'avoidStepsBike' : 'Stufen/Treppen vermeiden',
+
+
+		'avoidStepsPedestrian': 'Stufen/Treppen vermeiden',
+ 		'avoidFords' : 'Furten',
+ 		'avoidFordsBike' : 'Furten',
+ 		'avoidFordsPedestrian' : 'Furten',
 		
-	//Surfaces:
+		//Surfaces:
 		'surface': 'Oberfläche',
 		'paved': 'Befestigt',
         'asphalt': 'wie Beton oder Asphalt',
